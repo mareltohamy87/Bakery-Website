@@ -1,0 +1,854 @@
+@import url("./alegreya_font.css");
+@import url("./alegreya_sans_font.css");
+
+/*------ Globa Styles------*/
+body::selection {
+  color: #b6a755;
+}
+
+* {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+span,
+a {
+  display: inline-block;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 15px;
+}
+
+.img {
+  border-radius: 5vh;
+  transition: scale 0.4s ease;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.img:hover {
+  scale: 0.9;
+}
+
+/*______________ variables _________*/
+.font_1 {
+  font-family: "Alegreya";
+}
+
+.font_2 {
+  font-family: "Alegreya Sans";
+}
+
+.white {
+  color: #ffffff;
+}
+
+.hero_sub {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.black {
+  color: #303030;
+}
+
+.dark_grey {
+  color: #686868;
+}
+
+.light_grey {
+  color: #888888;
+}
+
+.map_font {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.map_font_2 {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.blue {
+  color: #1a73e8;
+}
+
+.footer_1 {
+  color: #969696;
+}
+
+.footer_2 {
+  color: #a9a9a9;
+}
+
+.footer_3 {
+  color: #777777;
+}
+
+/*_______________ H E A D E R _________*/
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transition: all ease-in-out 0.2s;
+  height: 90px;
+}
+
+header:hover li a:hover {
+  color: #cfc483;
+}
+
+.header_logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25px;
+  width: fit-content;
+  text-align: left;
+}
+
+.header_logo img {
+  max-width: 100%;
+  width: 176px;
+}
+
+nav ul li,
+nav {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header ul {
+  margin-top: 25px;
+}
+
+header .nav_bar {
+  text-align: right;
+  width: 85%;
+}
+
+nav ul li {
+  padding-inline: 15px;
+}
+
+nav ul li .active {
+  color: #e0dcd2;
+}
+
+nav ul li .active:hover {
+  color: #e0dcd2;
+}
+
+nav ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  transition: all ease-in-out 0.2s;
+}
+
+nav ul li a:hover {
+  color: #cfc483;
+}
+
+.list_side_icons {
+  position: absolute;
+  right: 0px;
+  top: 200px;
+  background: #fff;
+  padding: 15px 10px 0px 20px;
+  border-radius: 6px 0 0 6px;
+  text-align: center;
+  line-height: 42px;
+  z-index: -1;
+  transition: all ease-in-out 0.2s;
+  border: 3px solid transparent;
+}
+
+.list_side_icons:hover {
+  transform: scale(1);
+  border: 3px solid #cfc483;
+}
+
+/*_______________ H E R O  S E C T I O N _________*/
+.hero_section {
+  position: relative;
+  background-image: url(../imgs/hero_section/hero_section.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  height: 85vh;
+}
+
+.hero_content {
+  display: inline-block;
+  text-align: center;
+  margin-top: 200px;
+  width: 100%;
+}
+
+.hero_content p {
+  font-size: 22px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.hero_content h1 {
+  font-size: 76px;
+  margin-bottom: 18px;
+}
+
+.hero_content .para_hero {
+  font-size: 24px;
+  margin: 10px 0px 20px;
+  display: inline-block;
+  line-height: 1.86em;
+  width: 60%;
+  font-weight: 500;
+}
+
+.hero_buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.hero_buttons .solid {
+  font-size: 16px;
+  background-color: #8e7754;
+  border: 2px solid transparent;
+  padding: 15px 28px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 12px 0px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.hero_buttons .solid:hover {
+  background-color: white;
+  color: #222;
+  transition: all ease-in-out 0.2s;
+}
+
+.hero_buttons .outline {
+  font-size: 16px;
+  border: 2px solid white;
+  padding: 15px 28px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 0px 0px 12px 12px;
+  font-weight: 600;
+}
+
+.hero_buttons .outline:hover {
+  background-color: white;
+  color: #333;
+  transition: all ease-in-out 0.2s;
+}
+
+.scroll_div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  text-align: center;
+  z-index: 4;
+}
+
+.scroll {
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  width: 32px;
+  height: 50px;
+  border-radius: 24px;
+  text-indent: -9999px;
+  position: relative;
+  cursor: pointer;
+  transition: all ease-in-out 0.2s;
+}
+
+.scroll:hover {
+  transform: scale(1.1);
+}
+
+.scroll_dot_img {
+  position: absolute;
+  left: 49.8%;
+  top: 20px;
+}
+
+/*_______________ W H O  W E  A R E ?  S E C T I O N _________*/
+.who_we_are {
+  padding: 90px 0;
+  background-color: #ffffff;
+}
+
+.who_we_are_img {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 25px;
+}
+
+.who_we_are_img img {
+  max-width: 100%;
+  width: 565px;
+}
+
+.who_we_are_content {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-block: 15px;
+  padding-left: 35px;
+}
+
+.who_we_are_list ul {
+  display: inline-block;
+}
+
+.who_we_are_content h2 {
+  font-size: 32px;
+  line-height: 1.38em;
+  margin-bottom: 25px;
+}
+
+.who_we_are_content p {
+  font-size: 17px;
+  line-height: 1.86em;
+}
+
+.who_we_are_content .who_we_are_list {
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.who_we_are_list img,
+.span_list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.who_we_are_list li {
+  margin-bottom: 2px;
+  padding: 7px 0px;
+}
+
+.who_we_are_list img {
+  PADDING-right: 10px;
+  transition: all ease-in-out 0.2s;
+}
+
+.who_we_are_list li img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*_______________ O U R  L O C A T I O N  S E C T I O N _________*/
+.our_location {
+  background-color: #f8f8f8;
+  padding: 90px 64px;
+}
+
+.our_location_content,
+.our_location_img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.our_location_content {
+  width: 49%;
+  padding: 20px 15px 0;
+}
+
+.our_location_img {
+  width: 50%;
+}
+
+.our_location_img img {
+  width: 565px;
+  max-width: 100%;
+}
+
+.our_location_content h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.our_location_content .our_location_para {
+  font-size: 17px;
+  line-height: 1.86em;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+/*_______________ O U R  B A K I N G  S E C T I O N _________*/
+.baking_section {
+  background-color: #ffffff;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.baking_title {
+  margin: 10px 0 60px;
+  text-align: center;
+}
+
+.baking_title h2 {
+  font-size: 30px;
+  line-height: 1.3em;
+}
+
+.baking_title p {
+  font-size: 17px;
+  margin-top: 17px;
+  line-height: 1.6em;
+}
+
+.baking_card {
+  width: 33%;
+  float: left;
+  padding-inline: 20px;
+}
+
+.clear-fix {
+  clear: left;
+}
+
+.baking_card {
+  text-align: center;
+}
+
+.baking_card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.baking_card p {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.baking_card img {
+  margin-bottom: 30px;
+  max-width: 100%;
+}
+
+/*_______________ C O N T A N T  I N F O R M A T I O N  S E C T I O N _________*/
+.contact_information {
+  background-color: #f8f8f8;
+  padding-block: 85px;
+}
+
+.contact_information_content {
+  width: 49%;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 15px;
+}
+
+.contact_information_content h2 {
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+.contact_information_content p {
+  font-size: 17px;
+  margin-bottom: 30px;
+  line-height: 1.86em;
+  text-align: justify;
+}
+
+.contact_information_content h3 {
+  font-size: 17px;
+  margin-bottom: 18px;
+}
+
+.contact_information .contact_informatio_list {
+  font-size: 17px;
+}
+
+.contact_information_list img,
+.span_contact_list {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.contact_information_list li {
+  padding-block: 10px;
+}
+
+.contact_information_list img {
+  transition: all ease-in-out 0.2s;
+  margin-right: 10px;
+}
+
+.contact_information_list img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*_________ fullscreen button information map ________*/
+
+.contact_information_map {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 15px;
+}
+
+.embed-map-fixed {
+  position: relative;
+  text-align: right;
+  width: 600px;
+  height: 400px;
+}
+
+.embed-map-container {
+  overflow: hidden;
+  background: none;
+  width: 575px;
+  height: 500px;
+}
+
+.embed-map-frame {
+  width: 600px;
+  height: 500px;
+  max-width: 100%;
+}
+
+.contact_information_map .fullscreen-btn {
+  position: absolute;
+  top: 7px;
+  right: 15px;
+  border: 2px solid #ffffff;
+  width: 43px;
+  height: 35px;
+  background-color: white;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+/*_________ google information map ________*/
+.google_contact_informatio {
+  background-color: white;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  padding: 15px 25px;
+  top: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+  left: 34%;
+  max-width: 365px;
+  position: absolute;
+  transform: translateX(-50%);
+  width: calc(100% - 10px);
+  z-index: 1;
+}
+
+.google_image img {
+  width: 50px;
+  max-width: 100%;
+}
+
+.google_span {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 600;
+  margin-block: 15px;
+}
+
+.google_table {
+  border: 1px solid #e3e3e3;
+  background: #F9F9F9;
+  margin-bottom: 30px;
+  width: 100%;
+
+}
+
+.google_table_anchor a {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  padding: 7px 11px;
+  font-weight: 700;
+}
+
+.google_table_anchor {
+  width: 65%;
+  padding: 7px 11px;
+}
+
+.google_table_button {
+  border: 1px solid #e3e3e3;
+  padding: 7px 11px;
+  border-radius: 4px;
+  height: 36px;
+  text-align: right;
+}
+
+.google_table_button .google_button {
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+  color: #1a73e8;
+  border-radius: 4px;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  height: 36px;
+  padding: 0 24px;
+}
+
+/*_______________ F O O T E R _________*/
+/*_______________ T O P   F O O T E R _________*/
+.top-footer {
+  background-color: #403d38;
+  padding: 60px 0;
+}
+
+.footer_contact {
+  float: left;
+}
+
+.clear-fix {
+  clear: left;
+}
+
+.footer_contact ul {
+  width: 270px;
+}
+
+.footer_contact h2 {
+  font-size: 18px;
+  margin-bottom: 25px;
+  color: white;
+  font-family: "Alegreya";
+}
+
+.footer_contact h2:hover {
+  color: #cfc483;
+  cursor: pointer;
+}
+
+.footer_contact li {
+  font-size: 16px;
+  margin-bottom: 6px;
+  padding-bottom: 7px;
+  color: #969696;
+  line-height: 1.86em;
+  font-family: "Alegreya Sans";
+}
+
+.footer_contact i {
+  margin-right: 8px;
+}
+
+.footer_contact li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/*_____first column about us_____*/
+div .about_us,
+div .why_we_are_special,
+div .contact_details {
+  width: 25%;
+  padding-inline: 16px;
+}
+
+.about_us p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 1.86em;
+}
+
+/*_____second column why we are special?_____*/
+.fa-greater-than {
+  font-size: 8px;
+  padding-right: 10px;
+}
+
+.why_we_are_special ul {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.why_we_are_special i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*_____third column Opening Hours _____*/
+div.opening_hours {
+  width: 20%;
+  padding-inline: 16px;
+}
+
+.opening_hours ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.openeing_hours i {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*_____fourth column Contact Details _____*/
+.contact_details div {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+footer .contact_details {
+  position: relative;
+  z-index: 100;
+}
+
+.contact_details div:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact_details .address:hover {
+  color: #cfc483;
+  cursor: pointer;
+}
+
+.contact_details .address {
+  width: 80%;
+  vertical-align: middle;
+  line-height: 1.6em;
+}
+
+.address_contact_details i {
+  vertical-align: top;
+}
+
+.address_contact_detals {
+  display: inline;
+}
+
+.address_contact_detals i {
+  display: inline-block;
+}
+
+.map_container img {
+  position: absolute;
+  z-index: 10;
+  top: 35%;
+}
+
+.contact_details i {
+  font-size: 18px;
+  color: #969696;
+  text-align: center;
+  line-height: 1.6em;
+}
+
+.contact_details span a:hover {
+  color: #cfc483;
+}
+
+/*_______________ B O T T O M   F O O T E R _________*/
+footer .bottom_footer {
+  background-color: #353330;
+  padding-block: 50px;
+}
+
+.bottom_footer .bottom_footer_logo {
+  margin-inline: auto;
+  width: fit-content;
+}
+
+.bottom_footer .bottom_footer_logo img {
+  max-width: 100%;
+  margin: 10px 0px 25px;
+}
+
+.bottom_footer p {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.bottom_footer p:hover {
+  color: #cfc483;
+  cursor: pointer;
+}
+
+/*------ bottom footer icons ----*/
+
+.bottom_footer_icon {
+  margin-top: 15px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.bottom_footer_icon .icon {
+  background-color: #484540;
+  border-radius: 100%;
+  color: #8c8a86;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.bottom_footer_icon .icon:hover {
+  color: white;
+}
+
+.facebook_icon:hover {
+  background: #3b5998;
+}
+
+.google_icon:hover {
+  background-color: #dd4b39;
+}
+
+.linkdin_icon:hover {
+  background-color: #007bb5;
+}
+
+.twitter_icon:hover {
+  background-color: #00aced;
+}
+
+.bottom_footer_top_button i {
+  border: 2px solid rgba(173, 169, 169, 0.8);
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 0.2s;
+}
+
+.bottom_footer_top_button i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  border: 2px solid white;
+}

@@ -1,0 +1,14 @@
+@media screen and (max-width:1300px) {
+.nav_bar {
+ display: none;
+}
+}
+
+@media screen and (min-width:1300px) {
+.close-btn {
+    display: none;
+}
+.label {
+    display: none;
+}
+}
